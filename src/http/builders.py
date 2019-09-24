@@ -134,4 +134,6 @@ class HTTPResponse:
             lines.append(line)
 
         lines.append('\r\n')
-        return '\r\n'.join(lines).encode()
+        res = '\r\n'.join(lines).encode()
+        print(res)
+        return res
